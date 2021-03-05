@@ -1,0 +1,9 @@
+#include<stdio.h>
+main()
+{
+    float f,c;
+    printf("enter values of f");
+    scanf("%f",&f);
+    c=(5*(f-32))/9;
+    printf("%f",c);
+}

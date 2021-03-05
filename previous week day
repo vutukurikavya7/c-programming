@@ -1,0 +1,33 @@
+#include<stdio.h>
+main()
+{
+  int day,day1,prev;
+  printf("enter value of day,prev");
+  scanf("%d%d",&day,&prev);
+  day1=day-prev;
+  if(day1<0)
+  {
+      day1=7+day1;
+  }
+   switch(day1)
+  {
+      case 0:printf("sun");
+      break;
+      case 1:printf("mon");
+      break;
+      case 3:printf("tue");
+    break;
+      case 4:printf("wed");
+      break;
+      case 5:printf("thurs");
+       break;
+       case 6:printf("fri");
+       break;
+       case 7:printf("sat");
+       break;
+  }
+  printf("\n end of program");
+}      
+  
+    
+        

@@ -1,0 +1,15 @@
+#include <stdio.h>
+main()
+{
+    int basic;
+    float HRA,PF,Da,net,gross;
+    printf("enter value of basic");
+    scanf("%d",&basic);
+    HRA=(10*basic)/100;
+    PF=(12*basic)/100;
+    Da=(128*basic)/100;
+    gross=HRA+Da+basic;
+    net=gross-PF;
+    printf("%f",net);
+    
+}

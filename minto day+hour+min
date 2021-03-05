@@ -1,0 +1,11 @@
+#include<stdio.h>
+main()
+{
+    int min,day,hrs,n;
+    printf("enter value of n");
+    scanf("%d",&n);
+    day=n/(60*24);
+    hrs=(n%(60*24))/60;
+    min=n-(day*60*24)-(hrs*60);
+   printf("%d days,%d hours,%d minutes",day,hrs,min); 
+}

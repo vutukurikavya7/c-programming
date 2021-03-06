@@ -1,0 +1,11 @@
+#include<stdio.h>
+main()
+{
+    int n,i;
+    printf("enter values of n");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        printf("%d.welcome to prav lab\n",i);
+    }
+}

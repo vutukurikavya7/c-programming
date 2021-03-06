@@ -1,0 +1,50 @@
+#include<stdio.h>
+main()
+{
+    int GCD,LCM,a,b,r,m,l,c;
+    printf("enter values of a,b");
+    scanf("%d%d",&a,&b);
+  l=a;
+  m=b;
+   if(a<b)
+  {
+  c=b;
+  b=a;
+  a=c; 
+  }
+   r=a%b;
+ while(r!=0)
+    {
+    a=b;
+    b=r;
+    r=a%b;
+    }
+     printf("GCD=%d\n",b);   
+     LCM=(l*m)/b;
+     printf("LCM=%d\n",LCM);
+}  
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 
+ 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   

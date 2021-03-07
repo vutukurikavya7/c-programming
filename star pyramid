@@ -1,0 +1,30 @@
+
+#include<stdio.h>
+
+int main()
+{
+    int r,i,j,k;
+    printf("enter value of r");
+    scanf("%d",&r);
+    for(i=1;i<=r;i++)
+    {
+        for(j=1;j<=r-i;j++)
+        {
+            printf(" ");
+        }
+        for(k=1;k<=i;k++)
+        {
+            printf("* ");
+            
+        }
+        printf("\n");
+        
+    }
+}                                                           
+
+/*enter value of r 3                                                                                                            
+         *                                                                                                                    
+        *  *                                                                                                                  
+       *  *  *                                                                                                               
+*/
+

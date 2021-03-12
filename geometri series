@@ -1,0 +1,22 @@
+#include<stdio.h>
+main()
+{
+    int n,x,pre,prev=1,sum=1,i;
+    printf("enter values of n,x\n");
+    scanf("%d%d",&n,&x);
+    if(n>=0)
+    {
+        for(i=1;i<=n;i++)
+        {
+            pre=prev*x;
+            sum+=pre;
+            prev=pre;
+        }
+    printf("%d",sum);
+    }    
+    if(n<0)
+    printf("error message");
+}    
+    
+    
+    

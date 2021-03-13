@@ -1,0 +1,32 @@
+
+#include <stdio.h>
+main() 
+{
+    int n,i,a[20],cn=0,ce=0,cp=0,co=0;
+    printf("enter value of n\n");
+    scanf("%d",&n);
+    printf("enter those elements\n");
+    for(i=0;i<n;i++)
+    scanf("%d",&a[i]);
+   
+    for(i=0;i<n;i++)
+    {
+    if(a[i]<0)
+    cn++;
+    }
+    printf("negative=%d\n",cn);
+      
+    for(i=0;i<n;i++)
+    {
+        if(a[i]%2==0)
+        ce++;
+    }
+    printf("even=%d\n",ce);
+    
+}    
+
+    
+    
+    
+    
+    

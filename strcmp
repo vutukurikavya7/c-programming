@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<string.h>
+main()
+{int d;
+    char str[20],str2[30];
+    printf("enter both strings");
+    gets(str);
+    gets(str2);
+   d=strcmp(str,str2);
+    if(d==0)
+    printf("equal");
+    if(d==1)
+    printf("sr");
+    else
+    printf("sr2");
+    
+}

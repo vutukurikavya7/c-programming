@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<string.h>
+main()
+{
+    char str[20],str2[30];
+    printf("enter both strings");
+    gets(str);
+    gets(str2);
+   strcat(str,str2);
+    puts(str);
+    
+}

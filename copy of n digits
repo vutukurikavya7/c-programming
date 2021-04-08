@@ -1,0 +1,11 @@
+{
+    char str[20],temp[20];
+    printf("enter strings:");
+    gets(str);
+    gets(temp);
+    strncpy(str,temp,3);
+    puts(str);
+    printf("temp is");
+    puts(temp);
+    
+}

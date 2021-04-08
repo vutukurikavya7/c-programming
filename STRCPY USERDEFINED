@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<string.h>
+main()
+{
+    char str1[20],str2[20];
+    printf("enter string1:");
+    gets(str1);
+    printf("enter string 2:");
+    gets(str2);
+    strcopy(str1,str2);
+    printf("%s",str1);
+    printf("%s",str2);
+}
+void strcopy(char str1[20],char str2[20])
+{int i=0;
+    while(str2[i]!='\0')
+    {
+        str1[i]=str2[i];
+        i++;
+    }
+    str1[i]='\0';
+
+}

@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<string.h>
+main()
+{
+    char str[20];
+    int len;
+    printf("enter string:");
+    gets(str);
+    len=strlength(str);
+    printf("%d",len);
+}
+int strlength(char str[20])
+{int i=0;
+    while(str[i]!='\0')
+    i++;
+    return i;
+}

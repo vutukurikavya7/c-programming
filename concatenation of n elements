@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<string.h>
+main()
+{
+    char str[20],temp[20];
+    printf("enter strings:");
+    gets(str);
+    gets(temp);
+    strncat(str,temp,3);
+    puts(str);
+    
+}
+    

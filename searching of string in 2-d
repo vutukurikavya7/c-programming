@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    int i,n,c=0;
+    char a[20][20],temp[10];
+    printf("enter no. of strings:");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        printf("string %d is:",i+1);
+        scanf("%s",&a[i]);
+    }
+    printf("enter ele to search:");
+    scanf("%s",&temp[10]);
+    
+    for(i=0;i<n;i++)
+    {
+      if(strcmp(a[i],temp[10])==0);
+      c++;
+    }
+     if(c==0)
+    printf(" found");
+    else
+    printf(" not found ");
+    
+}
+
+

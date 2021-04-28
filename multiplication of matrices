@@ -1,0 +1,67 @@
+
+#include<stdio.h>
+main()
+{
+    int a[10][10],i,j,m,n,b[10][10],c[10][20],m2,n2,k;
+    printf("enter no. of rows\n");
+    scanf("%d%d",&m,&m2);
+    printf("enter value of n");
+    scanf("%d%d",&n,&n2);
+    printf("enter the elements");
+    if(n==m2)
+    {
+     for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+       {
+        scanf("%d",&a[i][j]);
+       }
+    }
+            for(i=0;i<m2;i++)
+    {
+        for(j=0;j<n2;j++)
+       {
+        scanf("%d",&b[i][j]);
+       }
+    }
+printf("a matrix is\n");
+       for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+       {
+        printf("%d\t ",a[i][j]);
+        }
+     printf("\n");
+    }
+    printf("b matrix is\n");
+          for(i=0;i<m2;i++)
+    {
+        for(j=0;j<n2;j++)
+       {
+        printf("%d\t ",b[i][j]);
+        }
+     printf("\n");
+    }
+ 
+    for(i=0;i<m;i++)
+    {
+        for(j=0;j<n2;j++)
+        {
+            c[i][j]=0;
+            for(k=0;k<n;k++)  
+            c[i][j]=c[i][j]+a[i][k]*b[k][j];
+        }
+    }
+    printf("c matrix is\n");
+    for(i=0;i<m;i++)
+   {
+    for(j=0;j<n2;j++)
+        {
+         printf("%d\t",c[i][j]) ;
+        }
+    printf("\n");
+   }
+    }
+    else
+    printf("multiplication is not possible");
+}

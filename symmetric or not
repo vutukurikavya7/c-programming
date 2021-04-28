@@ -1,0 +1,49 @@
+
+#include<stdio.h>
+main()
+{
+    int a[10][10],i,j,m,n,b[10][10];
+    printf("enter no. of rows");
+    scanf("%d",&m);
+    printf("enter value of n");
+    scanf("%d",&n);
+    printf("enter the elements");
+    if(m==n)
+    {
+        for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+       {
+        scanf("%d",&a[i][j]);
+       }
+    }
+       for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+       {
+        printf("%d\t ",a[i][j]);
+        }
+     printf("\n");
+    }
+    printf("transpose of given matrix is\n");
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<m;j++)
+        {
+            b[i][j]=a[j][i];
+        }
+    }
+    for(i=0;i<n;i++)
+   {
+    for(j=0;j<m;j++)
+        {
+         printf("%d\t",b[i][j]) ;
+        }
+    printf("\n");
+   }
+    }
+   if(b[i][j]==a[i][j])
+   printf("symmetric\n");
+   else
+   printf("not symmetric\n");
+}

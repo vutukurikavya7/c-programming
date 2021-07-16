@@ -1,0 +1,17 @@
+#include<stdio.h>
+main()
+{
+    int bs,da,hra,pf,it,gs,ns;
+    printf("bs");
+    scanf("%d",&bs);
+    da=(bs*25)/1000;
+    hra=(bs*15)/100;
+    gs=da+hra+bs;
+    pf=gs*10/100;
+    it=gs*10/100;
+    ns=gs-(pf+it);
+    printf("%d",ns);
+    
+
+    
+}

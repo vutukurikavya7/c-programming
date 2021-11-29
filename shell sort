@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+void main()
+{
+   int a[10],n,i,j,x,temp;
+   printf("enter n:\n");
+   scanf("%d",&n);
+   printf("enter the elements");
+   for(i=0;i<n;++i)
+       scanf("%d",&a[i]);
+    for(x=n/2;x>0;x/=2){
+      for(i=x;i<n;i++){
+          temp=a[i];
+          for(j=i;j>=x && a[j-x]>temp;j-=x){
+              a[j]=a[j-x];
+          }
+          a[j]=temp;
+      }
+  }
+printf("the sorted elements are\n");
+for(i=0;i<n;i++){
+       printf("%d\t",a[i]);
+}
+}
+
+    

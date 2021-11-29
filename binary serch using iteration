@@ -1,0 +1,49 @@
+#include<stdio.h>
+void sort(int a[10],int n)
+{
+    int i,j,temp;
+    for(i=0;i<n;i++){
+        for(j=i+1;j<n;j++){
+            if(a[i]>a[j]){
+                temp=a[i];
+                a[i]=a[j];
+                a[j]=temp;
+            }
+        }
+    }
+}
+void main()
+{
+   int a[10],n,i,j,x;
+   printf("enter n:\n");
+   scanf("%d",&n);
+   printf("\nenter x:\n");
+   scanf("%d",&x);
+   for(i=0;i<n;i++){
+       scanf("%d",&a[i]);
+       
+   }
+   sort(a,n);
+   int high=n-1;
+    int low=0;
+    int mid=(high+low)/2;
+    while(low<=high&&a[mid]!=x)
+    {
+        if(a[mid]<x)
+        {
+            low=mid+1;
+            mid=(high+low)/2;
+        }
+        else if(a[mid]>x){
+            high=mid-1;
+            mid=(high+low)/2;
+           
+        }
+       
+    }
+    if(a[mid]==x)
+        printf("elment is found at %d",mid+1);
+    else
+        printf("element is not found");
+   }   
+

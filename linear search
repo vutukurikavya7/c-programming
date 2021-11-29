@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+void main()
+{
+   int a[10],n,i,j,x,count=0;
+   printf("enter n:\n");
+   scanf("%d",&n);
+   printf("\nenter x:\n");
+   scanf("%d",&x);
+   for(i=0;i<n;i++){
+       scanf("%d",&a[i]);
+   }
+   for(i=0;i<n;i++){
+       if(a[i]==x){
+           printf("%d is position ",i+1);
+           count=count+1;
+           break;
+       }
+       else{
+           count=0;
+       }
+   }
+   if(count==0)
+   printf("no");
+   
+}
+

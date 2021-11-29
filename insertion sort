@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+void main()
+{
+   int a[10],n,i,j,x;
+   printf("enter n:\n");
+   scanf("%d",&n);
+   for(i=0;i<n;i++){
+       scanf("%d",&a[i]);
+    }
+  for(i=0;i<n;i++){
+     x=a[i];
+     j=i-1;
+     while(j>=0&&a[j]>x){
+         a[j+1]=a[j];
+         j=j-1;
+     }
+     a[j+1]=x;
+  }
+
+printf("the sorted elemnts are\n");
+for(i=0;i<n;i++){
+       printf("%d\t",a[i]);
+    }
+}
+
+
+    
